@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+.background{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.left{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.966);
+    position: relative;
+}
+
+.left .pointer{
+    position: absolute;
+    right: 10%;
+}
+
+.menubutton{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #e6e6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms all;
+    position: relative;
+    z-index: 60;
+}
+
+.menubutton:hover{
+    background-color: #0c1ea9;
+
+}
+.menubutton:hover .line path{
+    stroke: white;
+}
+.menubutton:hover svg * {
+    stroke: white;
+    fill: white;
+}
+
+.onee,
+.two,
+.tree {
+    transition: 500ms all;
+    width: 95px;
+}
+
+.menubutton:hover .tree {
+    transform: rotateY(-45deg);
+    transform-origin: 0%;
+}
+
+.flexible{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.tittle{
+    font-size: 33px;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+    margin-left: 20px;
+}
+.middletag{
+   height: calc(100vh - 200px);
+   position: relative;
+}
+
+.text-oriadent{
+    transform: rotate(270deg);
+    color: #ececec;
+    position: absolute;
+    bottom: 1rem;
+
+}
+
+.searchbutton{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #e6e6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms all;
+    position: relative;
+    margin-bottom: 10%;
+    position: absolute;
+    bottom: -15px;
+   
+}
+
+.searchbutton:hover{
+    background-color: #0c1ea9;
+
+}
+
+.searchbutton:hover svg line{
+    stroke: white;
+
+}
+.searchbutton:hover svg circle{
+    stroke: white;
+}
+.searchbutton svg{
+    transition: 500ms all;
+    padding: 2px;
+}
+.searchbutton:hover svg{
+    transform: scale(1.3);
+}
+
+.nextter{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    bottom: 35px;
+}
+
+.nextbutton{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #e6e6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms all;
+    position: relative;
+}
+.nextbutton:hover{
+    background-color: #0c1ea9;
+}
+.nextbutton:hover svg{
+    transform: translateX(10px);
+}
+.nextbutton svg{
+    transition: 500ms all;
+}
+
+.nextbutton:hover .icon path{
+    stroke: white;
+}
+
+.prevbutton{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #e6e6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms all;
+    position: relative;
+    margin-right: 15px;
+}
+.prevbutton:hover{
+    background-color: #0c1ea9;
+}
+
+.prevbutton:hover .icon path{
+    stroke: white;
+}
+
+.prevbutton:hover svg{
+    transform: translateX(-10px);
+}
+.prevbutton svg{
+    transition: 500ms all;
+}
+
+.opener{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.90);
+    overflow: hidden;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms all;
+    transform: translateX(-100%);
+}
+.active{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.searcherer{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.952);
+    overflow: hidden;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms all;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actived{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+ul{
+    display: block;
+    list-style-type:none;
+    margin-top: 70px;
+
+    
+}
+
+li{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Helvetica Neue;
+}
+.searhbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searhbar input{
+    border: none;
+    padding: 20px;
+    width: 500px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 66px;
+background-color: #0c1ea9;
+
+}
+.search * {
+    stroke: white;
+    padding: 2px;
+    width: 35px;
+    height: 35px;
+}
